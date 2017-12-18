@@ -1,20 +1,40 @@
 html {
+  font-size: 18px;
   color: white;
   font-family: Helvetica, sans-serif;
-  /* background-color: black; */
-  background-color: black;
 }
 
 /* banner */
 .banner {
   background-image: url("../img/moto.jpeg");
-  /*background-repeat: no-repeat;*/
   background-size: 100%;
+  height: 25rem;
+}
+
+.header img {
+  height: 1.5rem;
+  padding: 0 1rem 0 0.5rem;
+}
+
+.header span {
+  padding: 0.66rem 0;
+}
+
+.new-arrival {
+  padding-top: 9rem;
+  width: 20rem;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.new-arrival p {
+  font-weight: bold;
+  opacity: 1;
 }
 
 nav {
+  padding: 0.75rem 0;
   background-color: firebrick;
-  height: 30px;
 }
 
 span a {
@@ -22,11 +42,10 @@ span a {
   text-decoration: none;
 }
 
-.content {
-  border: 1px solid black;
-}
 
 /* footer */
 footer {
-
+  height: 5rem;
+  text-align: left;
+  background-color: black;
 }
