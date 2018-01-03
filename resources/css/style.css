@@ -75,20 +75,15 @@ nav span a {
   text-decoration: none;
 }
 
+/* main content */
 .promoted {
   display: flex;
   justify-content: space-between;
   margin: 3em 0 0 0;
 }
 
-.content-left {
-  width: 30%;
-}
-
-.content-center {
-  width: 30%;
-}
-
+.content-left,
+.content-center,
 .content-right {
   width: 30%;
 }
