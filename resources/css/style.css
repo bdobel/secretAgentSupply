@@ -4,13 +4,6 @@ html {
   font-family: Helvetica, sans-serif;
 }
 
-/* media queries */
-@media only screen and (max-width: 1024px) {
-  ul.container {
-    display: none;
-  }
-}
-
 /* header */
 .header {
   z-index: 1;
@@ -70,6 +63,16 @@ html {
   .banner {
     height: 15rem;
   }
+
+  .header .container span {
+    display: none;
+  }
+
+  .header .container img (
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    )
 }
 
 /* navigation */
@@ -112,9 +115,7 @@ li a {
   margin-top: 3rem;
 }
 
-.content-left,
-.content-center,
-.content-right {
+.content {
   width: 30%;
 }
 
@@ -160,9 +161,54 @@ li a {
   color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 47%;
+  }
+
+  .content.right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .new-arrival h4 {
+    font-size: .75rem;
+  }
+
+  .new-arrival h1 {
+    font-size: 1.5rem;
+  }
+
+  .promoted,
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .content.center {
+    display: none;
+  }
+
+  .about-info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
 /* footer */
 footer {
   margin-top: 4rem;
   background-color: black;
   padding: 5rem 0;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
 }
